@@ -1,3 +1,17 @@
+.transform(...) {
+  -webkit-transform: @arguments;
+    -ms-transform: @arguments;
+      transform: @arguments;
+}
+
+.transition(...) {
+  -webkit-transition: @arguments;
+     -moz-transition: @arguments;
+      -ms-transition: @arguments;
+       -o-transition: @arguments;
+          transition: @arguments;
+}
+
 @keyframes bg_change
 {
   0% {background-color:#becfbe;}
@@ -24,6 +38,10 @@ html {
   -webkit-animation-duration:60s;
   -webkit-animation-direction:alternate;
   -webkit-animation-iteration-count:infinite;
+  animation-name: bg_change;
+  animation-duration:60s;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
 }
 
 body {
@@ -123,6 +141,18 @@ h3 {
   width: 470px;
   float: left;
   height: 200px;
+  a {
+    color: fadeout( #fff, 40% );
+    .transition( all 0.3s );
+    &:hover {
+      color: #fff;
+      p {
+        opacity: 1;
+        top: 0;
+        .transition( all 0.3s );
+      }
+    }
+  }
   h4 {
     font-weight: 800;
     line-height: 1em;
@@ -131,12 +161,16 @@ h3 {
     text-transform: uppercase;
   }
   p {
+    position: relative;
+    opacity: 0;
+    top: -50px;
     font-weight: 300;
     line-height: 1em;
     letter-spacing: 0.1em;
     margin: 0;
     padding-left: 10px;
     text-transform: uppercase;
+    .transition( all 0.1s );
   }
 }
 .link-tw, .link-em {
