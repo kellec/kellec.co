@@ -62,27 +62,37 @@ p {
   font-weight: 500;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 959px) {
-  p {
-    font-size: 4.25vw;
-  }
-}
-
 h1 {
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Yeseva One', serif;
   font-size: 130px;
   font-size: 13vw;
   line-height: 1em;
   margin: 0;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
 }
 
+@media only screen and (min-width: 400px) and (max-width: 959px) {
+  p {
+    font-size: 5vw;
+  }
 
-@media only screen and (min-width: 0px) and (max-width: 959px) {
-  .intro {
-    font-size: 4.75vw;
+  h1 {
+    font-size: 14vw;
   }
 }
+
+@media only screen and (max-width: 399px) {
+  p {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 94px;
+  }
+}
+
+
+
 
 .container {
   max-width: 996px;
