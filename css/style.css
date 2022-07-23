@@ -1,74 +1,89 @@
 @keyframes bg_change {
   0% {
-    background-color: #becfbe;
+    background-color: #F9C80E;
   }
-  25% {
-    background-color: #becacf;
+
+  20% {
+    background-color: #F86624;
   }
-  50% {
-    background-color: #cfbebe;
+
+  40% {
+    background-color: #EA3546;
   }
-  75% {
-    background-color: #d5d6c5;
+
+  60% {
+    background-color: #662E9B;
+  }
+
+  80% {
+    background-color: #218593;
+  }
+
+  100% {
+    background-color: #F9C80E;
   }
 }
 
 html {
-  font-family: "proxima-nova", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background: #becfbe;
+  background: #218593;
   color: #fff;
   animation-name: bg_change;
-  animation-duration: 60s;
-  animation-direction: alternate;
+  animation-duration: 80s;
+  /* animation-direction: alternate; */
   animation-iteration-count: infinite;
 }
+
 body {
   margin: 0;
 }
+
 a {
   background: transparent;
   color: #fff;
+  fill: #fff;
   text-decoration: none;
   font-weight: 800;
   opacity: 0.8;
   transition: opacity 0.3s;
-  text-decoration: underline;
+  text-decoration: none;
 }
+
 a:active,
 a:hover {
   opacity: 1;
 }
+
 p {
-  font-size: 24px;
-  font-size: 2vw;
+  font-size: 28px;
+  font-size: 2.5vw;
+  font-weight: 500;
 }
+
 @media only screen and (min-width: 0px) and (max-width: 959px) {
   p {
     font-size: 4.25vw;
   }
 }
+
 h1 {
+  font-family: 'Yeseva One', cursive;
   font-size: 130px;
-  font-size: 9vw;
+  font-size: 13vw;
   line-height: 1em;
   margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  text-align: center;
+  letter-spacing: -0.05em;
 }
 
-.intro {
-  font-size: 28px;
-  font-size: 2.5vw;
-  font-weight: 500;
-}
+
 @media only screen and (min-width: 0px) and (max-width: 959px) {
   .intro {
     font-size: 4.75vw;
   }
 }
+
 .container {
   max-width: 996px;
   max-width: 80vw;
