@@ -25,19 +25,18 @@
 }
 
 html {
-  font-family: 'Josefin Sans', sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
   background: #218593;
   color: #fff;
   animation-name: bg_change;
   animation-duration: 80s;
-  /* animation-direction: alternate; */
   animation-iteration-count: infinite;
 }
 
 body {
   margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-variant-ligatures: normal;
 }
 
 a {
@@ -49,6 +48,7 @@ a {
   opacity: 0.8;
   transition: opacity 0.3s;
   text-decoration: none;
+  margin-right: 10px;
 }
 
 a:active,
@@ -90,9 +90,6 @@ h1 {
     font-size: 94px;
   }
 }
-
-
-
 
 .container {
   max-width: 996px;
